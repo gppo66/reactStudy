@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>GitHub</title>
+    <meta name="author" content="JellyBear">
+    <meta name="description" content="This is GitHub clone practice page">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- og : opengraph = website 라는 개념 :  외부로 보여지는 정보에 대한 설정-->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="GitHub">
+    <meta property="og:title" content="Build software better, together">
+    <meta property="og:description"
+        content="GitHub clone coding / GitHub is where people build software. More than 31 million people use GitHub to discover, fork, and contribute to over 100 million projects.">
+    <meta property="og:image" content="img/logo__github.png">
+    <meta property="og:url" content="https://github.com">
+
+    <!-- twitter card : og와 비슷한 개념 -->
+    <!-- https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started.html -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:site" content="GitHub">
+    <meta property="twitter:title" content="Build software better, together">
+    <meta property="twitter:description"
+        content="GitHub clone coding / GitHub is where people build software. More than 31 million people use GitHub to discover, fork, and contribute to over 100 million projects.">
+    <meta property="twitter:image" content="img/logo__github.png">
+    <meta property="twitter:url" content="https://github.com">
+
+    <!-- favicon = 쉽게 말해서 페이지 탭에서 보여지는 이미지
+    apple-touch-icon = 모바일에서 보여주는 파비콘 -->
+    <!--  굳이 작성할 필요는 없음 : <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> -->
+    <link rel="icon" href="favicon.png">
+    <link rel="apple-touch-icon" href="favicon.png">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- css(main, reset ... etc) 라이브러리 등은 main.css 보다 앞에 있어야 한다. ex) reset -> main.css -->
+    <!-- <link rel="stylesheet" href="css/reset.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+    <!-- body 처럼 사용할 div -->
+    <!-- body__container 에서 __가 두개인 이유 : 
+    CSS의 작명 규칙 BEM
+    1. __ : ~의 일부분일 때 사용
+    2. -- : ~의 상태일 때 사용
+    3. - : 일반적인 이름일 때 사용
+    절대적인 것은 아니지만 해당하는 팀에서 원할 때 지켜줘야함
+    -->
+    <div class="body__container">
+        <!-- HEADER -->
+        <header class="section">
+            <div class="inner clearfix">
+                <div class="menu-group float--left">
+                    <div class="logo">
+                        <a href="#">GitHub</a>
+                    </div>
+                    <!-- 메뉴 버튼을 구현할 때 가능하면 ul li 를 사용할 것 -->
+                    <ul class="mainmenu">
+                        <li><a href="#">Personal</a></li>
+                        <li><a href="#">OpenSource</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">Explore</a></li>
+                    </ul>
+                </div>
+                <div class="sign-group float--right">
+                    <div class="btn-group">
+                        <a href="#" class="btn sign-in">sign in</a>
+                        <a href="#" class="btn btn--primary sign-up">sign up</a>
+                    </div>
+                    <form id="search-form" method="POST" action="">
+                        <input type="text" id="search" class="input--text" placeholder="Search GitHub">
+                        <input type="submit" value="Submit">
+                    </form>
+                    <ul class="sub-menu">
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- Visual -->
+        <section class="section section--visual">
+            <div class="inner">
+                <div class="summary">
+                    <div class="summary__title">
+                        <!-- build 와 software를 한 단어로 표시하기 위해 &nbsp;를 사용하여 자연스럽게 줄바꿈이 되도록 함 -->
+                        How people build&nbsp;software
+                        <div class="summary__description">
+                            Millions of developers use GitHub to build personal projects, support their businesses, 
+                            and&nbsp;work together on open source technologies.
+                        </div>
+                    </div>
+                </div>
+                <form id="sign-form" method="post" action="">
+                    <ul>
+                        <li><input type="text" class="input--text" placeholder="Pick a username"></li>
+                        <li><input type="email" class="input--text" placeholder="Your email address"></li>
+                        <li>
+                            <input type="password" class="input--text" placeholder="Create a Password">
+                            <p class="caption">Use at least one letter, one numeral, and seven characters.</p>
+                        </li>
+                        <li>
+                            <input type="submit" class="btn btn--primary" value="Sign up for GitHub">
+                            <p class="caption">By clicking "Sign up for GitHub", 
+                                you agree to our terms of service and privacy policy. 
+                                We'll occasionally send you account related emails.</p>
+                        </li>
+                    </ul>
+                                       
+                </form>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
