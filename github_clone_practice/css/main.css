@@ -181,6 +181,18 @@ header .main-menu li a:hover {
     color: #4078c0;
 }
 
+#toggle-btn {
+    display: none;
+    background: url("../img/toggle-btn.svg");
+    width: 18px;
+    height: 24px;
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    cursor: pointer;
+    text-indent: -9999px;
+}
+
 /*sign group*/
 header .sign-group {
     display: flex;
@@ -355,11 +367,11 @@ header .sub-menu li a:hover {
     max-width: 1200px;
 }
 
-.section--feature .tiles ul {
+/* .section--feature .tiles ul {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /* 만약 구버전인 경우 grid를 사용할수 없기 때문에 다른 방식을 사용해야한다.  */
-}
+    만약 구버전인 경우 grid를 사용할수 없기 때문에 다른 방식을 사용해야한다.  
+} */
 
 .section--feature .tiles li {
     padding: 34px 24px;
@@ -367,9 +379,9 @@ header .sub-menu li a:hover {
     line-height: 1.5;
     border-right: 1px solid #e5e5e5;
     box-sizing: border-box;
-    /* float : left 를 이용하고 
-       width : 25% 
-       를 이용하면 기존의 grid를 사용하는 것과 동일하게 사용할 수 있다. 
+    float : left ;
+    width : 25% ;
+       /* 를 이용하면 기존의 grid를 사용하는 것과 동일하게 사용할 수 있다. 
        단 float을 사용하게 되면 clearfix를 만들어야한다.
      */
 }
@@ -493,96 +505,4 @@ footer .logo {
 
 footer .logo:hover svg {
     fill: #4078c0;
-}
-
-/* MEDIA */
-/* 반응형 웹을 만들기 위한 css  */
-@media(max-width: 1024px) {
-    header.section .inner {
-        max-width: none;
-        height: auto;
-        padding: 0 20px;
-    }
-
-    header .menu-group,
-    header .sign-group {
-        float: none;
-
-    }
-
-    header .menu-group {
-        display: block;
-    }
-
-    header .logo {
-        padding: 12px 0;
-
-    }
-
-    header .main-menu {
-        display: block;
-        margin-bottom: 10px;
-    }
-
-    header .main-menu li {
-        border-top: 1px solid #e5e5e5;
-    }
-
-    header .main-menu li a {
-        padding: 16px 0;
-
-    }
-
-    header .sign-group {
-        display: block;
-        padding: 10px 0 20px;
-    }
-
-    header .btn-group {
-        display: block;
-    }
-
-    header .btn-group .btn {
-        justify-content: center;
-
-    }
-
-    header .btn-group .sign-in {
-        margin-right: 0;
-        margin-bottom: 12px;
-    }
-
-    #search-form {
-        margin-top: 12px;
-        margin-right: 0;
-    }
-
-    #search {
-        width: 100%;
-        height: 42px;
-        text-align: center;
-    }
-    header .sub-menu{
-        margin-top: 12px;
-        margin-right: 0;
-        justify-content: center;
-    }
-    header .toggle {
-        display: none;
-    }
-    header .toggle.on{
-        display: block;
-    }
-    #toggle-btn {
-        background: url("../img/toggle-btn.svg");
-        width: 18px;
-        height: 24px;
-        position: absolute;
-        top: 16px;
-        right: 20px;
-        cursor: pointer;
-        text-indent: -9999px;
-    }
-
-
 }

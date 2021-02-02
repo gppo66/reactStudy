@@ -26,10 +26,24 @@ function initMap() {
         toggleElements();
     });
 
+    window.addEventListener('resize',function(){
+        if(window.innerWidth > 1024){
+            // Off Toggle Element
+            offElements();
+        }
+    });
+
     function toggleElements() {
         //유사배열을 반복시키기 위한 코드
         [].forEach.call($toggles, function (toggle) {
             toggle.classList.toggle('on');
         });
     }
+
+    function offElements(){
+        [].forEach.call($toggles, function (toggle) {
+            toggle.classList.remove('on');
+        });
+    }
 })(window, document)
+
