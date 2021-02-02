@@ -14,4 +14,5 @@
 # 2021 02 02
 -github 따라 만들기 예제 ( 100%)  
 -github sourceTree 실습 
-
+-branch 생성
+-branch merge
