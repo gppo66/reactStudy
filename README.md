@@ -16,3 +16,8 @@
     -github sourceTree 실습 
     -branch 생성
     -branch merge
+
+# 2021 02 03
+    -javascript vanilla
+        -javascript 문법 
+        -javascript 내장함수
