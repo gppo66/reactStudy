@@ -21,3 +21,16 @@
     -javascript vanilla
         -javascript 문법 
         -javascript 내장함수
+
+# 2021 02 04 
+    -javascript vanilla
+        -javascript 배열내장함수 
+        -javascript Prototype
+        -javascript Class 
+        -javascript 문법2
+        -javascript 비구조화할당
+        -javascript scope
+        -javascript Shor-circuit-evaluation
+        -javascript spread And Rest 
+        -javascript truthy and falsy
+        
