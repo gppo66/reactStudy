@@ -39,3 +39,4 @@
         -javascript async
         -javascript with HTML
         -basic exercise
+    - mac에서 연동 테스트 
