@@ -33,4 +33,9 @@
         -javascript Shor-circuit-evaluation
         -javascript spread And Rest 
         -javascript truthy and falsy
-        
+
+# 2021 02 05
+    -javascript vanilla 
+        -javascript async
+        -javascript with HTML
+        -basic exercise
