@@ -39,9 +39,8 @@
         -javascript async
         -javascript with HTML
         -basic exercise
-
-# 2021 02 06 
     -mac에서 연동 테스트 
+        
 # 2021 02 08
     -ReactJs
         - Begin-react
