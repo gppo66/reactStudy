@@ -40,6 +40,8 @@
         -javascript with HTML
         -basic exercise
 
+# 2021 02 06 
+    -mac에서 연동 테스트 
 # 2021 02 08
     -ReactJs
         - Begin-react
@@ -51,4 +53,3 @@
         - 여러개의 input 상태 관리하기 
         - useRef(특정 DOM 선택)
         - 배열에 항목 추가, 제거 
-        
