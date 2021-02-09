@@ -1,17 +1,32 @@
-import React from 'react';
+//class 형 컴포넌트
+import React, { Component } from 'react';
 
-function Hello({color,name, isSpecial}) {
-    
-    return <div style={{
-        color
-    }}>
+class Hello extends Component {
+  static defaultProps = {
+    name: '이름없음',
+  };
+  render() {
+    const { color, isSpecial, name } = this.props;
+    return (
+      <div style={{ color }}>
         {isSpecial && <b>*</b>}
         안녕하세요 {name}
-        </div>; //jsx
+      </div>
+    );
+  }
 }
+// function Hello({color,name, isSpecial}) {
 
-//기본값 
-Hello.defaultProps ={
-    name: '이름없음'
-}
+//     return <div style={{
+//         color
+//     }}>
+//         {isSpecial && <b>*</b>}
+//         안녕하세요 {name}
+//         </div>; //jsx
+// }
+
+//기본값
+// Hello.defaultProps ={
+//     name: '이름없음'
+// }
 export default Hello;
