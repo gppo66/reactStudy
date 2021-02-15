@@ -48,14 +48,13 @@
         -basic exercise
     -mac에서 연동 테스트
 
-
 # 2021 02 08
 
     -ReactJs
         - Begin-react
         - JSX
         - props
-        - 조건부 렌더링
+        - 조건부 렌더링cd 
         - useState
         - Input 상태 관리하기
         - 여러개의 input 상태 관리하기
@@ -80,3 +79,14 @@
         -LifeCycle 메소드
         -componenntDidCatch Method
         -Sentry 연동
+
+# 2021 02 12
+
+    -ReactJS
+        -Sass on React
+        -CSS Module
+        -Styled-Components
+
+# 2021 02 15
+    -ReactJS
+        -TodoList small Project
