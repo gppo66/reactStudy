@@ -98,7 +98,15 @@
 # 2021 02 18
     -ReactJs
         -React Router
-        -Sub Route
-        -history, withRouter
-        -Switch, NavLink...
-        -useReactRouterHook
+          -Sub Route
+          -history, withRouter
+          -Switch, NavLink...
+          -useReactRouterHook
+
+# 2021 02 19
+    -ReactJs
+        -React Redux
+            -redux를 이용한 카운터 만들기
+            -redux를 이용한 Todo list 
+            -redux 개발자 도구 적용 
+            
