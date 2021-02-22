@@ -110,3 +110,10 @@
             -redux를 이용한 Todo list 
             -redux 개발자 도구 적용 
             
+# 2021 02 22
+    -ReactJs
+        -React Redux 
+            -middleware
+                -redux-logger
+                -redux-thunk
+                -redux-thunk를 이용해 Promise 다루기
