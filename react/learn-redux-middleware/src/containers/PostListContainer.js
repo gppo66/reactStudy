@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import PostList from '../components/PostList';
@@ -10,9 +11,9 @@ function PostListContainer() {
   useEffect(() => {
     if (data) return;
     dispatch(getPosts());
-  }, [dispatch, data]);
+  }, [dispatch]);
 
-  if (loading) return <div>로딩중...</div>;
+  if (loading && !data) return <div>로딩중...</div>;
   if (error) return <div> error!</div>;
   if (!data) return null;
   return <PostList posts={data}></PostList>;

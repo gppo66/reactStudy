@@ -117,3 +117,10 @@
                 -redux-logger
                 -redux-thunk
                 -redux-thunk를 이용해 Promise 다루기
+
+# 2021 02 23
+    -ReactJs
+        -React Redux
+            -middleware
+                -redux-thunk
+                -redux-saga
